@@ -429,7 +429,7 @@
 .clubs-hero {
   position: relative;
   height: 60vh;
-  background: url('images/banner.jpg') center/cover no-repeat;
+  background: url('/assets/sports.jpg') center/cover no-repeat;
 }
 
 .clubs-hero .overlay {
@@ -718,46 +718,47 @@ img {
 }
 
 /* Contact Info */
-.contact-info {
-  flex: 1 1 300px;
-  padding: 20px;
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
   flex-direction: column;
   display: flex;
-  gap: 25px;
-}
-
-.info-item {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 30px;
-  gap: 15px;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  gap: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
   
 }
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
 
-.info-item i {
+.info-block i {
   font-size: 1.5rem;
-  color: #f59e0b;
-  margin-right: 15px;
-  margin-top: 5px;
-  min-width: 30px;
+  color: #06d6a0; /* Cyan/Teal icon color */
+  margin-top: 0.2rem;
 }
 
-.info-item .label {
-  font-weight: 600;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 3px;
-}
-
-.info-item p {
-  color: rgba(255, 255, 255, 0.75);
+.info-block h4 {
+  font-size: 0.9rem;
   margin: 0;
+  font-weight: 700;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.info-block p,
+.info-block a {
+  font-size: 1rem;
+  color: #f1f1f1;
+  margin: 0.3rem 0 0;
+  text-decoration: none;
+}
+
+.info-block a:hover {
+  color: #06d6a0;
 }
 
 
@@ -770,6 +771,11 @@ img {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-form input,
@@ -853,4 +859,38 @@ img {
   opacity: 1;
 }
 
+
+.about-hero-section {
+        color: white;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        height: 70vh;
+      }
+
+ .hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+ bottom: 0;
+        background: url('/assets/building.jpg') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+        background-size: cover;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        color: var(--text-dark);
+      }
 
