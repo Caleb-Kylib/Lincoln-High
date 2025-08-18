@@ -608,17 +608,13 @@ img {
   padding: 0 20px;
 }
 
-.director-image {
-  flex: 1;
-  min-width: 300px;
-   height: 600px;
-}
+
 
 .director-image img {
-  width: 100%;
+  width: 500px;
   border-radius: 10px;
   object-fit: cover;
-  height: 700px;
+  min-height: 600px;
   
 }
 
@@ -956,7 +952,7 @@ img {
 
 
 .about-hero-section {
-        color: white;
+color: white;
         padding: 100px 0;
         position: relative;
         overflow: hidden;
